@@ -1,0 +1,66 @@
+SET NAMES UTF8;
+DROP DATABASE IF EXISTS cnblogs;
+CREATE DATABASE cnblogs CHARSET = UTF8;
+USE cnblogs;
+#用户
+CREATE TABLE cnblogs_user(
+	uid INT PRIMARY KEY AUTO_INCREMENT,
+	uname VARCHAR(16) UNIQUE,
+	upwd VARCHAR(32) NOT NULL,
+	level enum("1","99") DEFAULT "1",
+	regTime BIGINT NOT NULL,
+	follow INT NOT NULL DEFAULT 0	#关注
+);
+INSERT INTO cnblogs_user VALUES(null,"Lin_HR",md5("123abc"),"99",1524584979031,0);
+#网站设置
+CREATE TABLE cnblogs_setting(
+	sid INT PRIMARY KEY AUTO_INCREMENT,
+	title VARCHAR(16) NOT NULL,
+	sub_title VARCHAR(32)
+);
+INSERT INTO cnblogs_setting VALUES(null,"自由、创新、研究、探索","只为成功找方法，不为失败找借口！");
+#博客文章
+CREATE TABLE cnblogs_blogs(
+	blogsId INT PRIMARY KEY AUTO_INCREMENT,
+	authorId INT NOT NULL,
+	title VARCHAR(128) NOT NULL,
+	content VARCHAR(2048) NOT NULL,
+    abstract VARCHAR(1024) NOT NULL,
+	tagetId INT,
+	createTime BIGINT NOT NULL,
+	lastEditTime BIGINT NOT NULL,
+	editCount TINYINT NOT NULL,
+	readCount INT NOT NULL,
+	isOnTop BOOLEAN DEFAULT 0,
+	isOnIndex BOOLEAN DEFAULT 0
+);
+#标签 分类
+CREATE TABLE tag(
+	tagId INT PRIMARY KEY AUTO_INCREMENT,
+	tagName VARCHAR(64) NOT NULL
+);
+INSERT INTO tag VALUES(NULL,"JavaScript");
+INSERT INTO tag VALUES(NULL,"CSS");
+#评论
+CREATE TABLE comment(
+	cid INT PRIMARY KEY AUTO_INCREMENT,
+	userId INT NOT NULL,
+	tblogsId INT NOT NULL,
+	content VARCHAR(256) NOT NULL,
+	cTime BIGINT NOT NULL
+);
+INSERT INTO comment VALUES(null,2,4,"666",1526183021009);
+#回复评论
+CREATE TABLE replay_comment(
+	rcId INT PRIMARY KEY AUTO_INCREMENT,
+	cid INT NOT NULL,	#原评论id
+	uid INT NOT NULL,	#用户id
+	toUid INT NOT NULL,	#对象用户id
+	content VARCHAR(256),
+	cTime BIGINT NOT NULL
+);
+#关注
+CREATE TABLE cnblogs_active(
+    aid INT PRIMARY KEY AUTO_INCREMENT,
+    uid INT NOT NULL UNIQUE
+);
