@@ -1,0 +1,257 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 左侧内容 */
+.content{
+    width: 890px;
+}
+
+.content-item{
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.content .item{
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: -1px;
+    position: relative;
+    _position: 1;
+    z-index: 1;
+}
+
+.content .item:hover{
+    z-index: 2;
+    border: 1px solid red;
+}
+
+.content .item .title{
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.content .item .title .time{
+    font-size: 12px;
+    background: #666;
+    color: #fff;
+    padding: 6px 5px;
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+    cursor: default;
+}
+
+.content .item .title .time:hover{
+    background: #FF5E52;
+}
+
+.content .item .title .title-content{
+    font-size: 20px;
+}
+
+.content .item .title .title-content a{
+    text-decoration: none;
+    color: #555;
+}
+
+.content .item .title .title-content a:hover{
+    color: #FF5E52;
+}
+
+.content .item .text{
+    font-size: 14px;
+    color: #555;
+    line-height: 26px;
+    /* 单词打破换行 */
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.content .item .text a{
+    color: #FF5E52;
+    text-decoration: none;
+}
+
+.content .item .text a:hover{
+    text-decoration: underline;
+}
+
+.content .item .detail{
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.content .item .detail span{
+    margin-right: 5px;
+    color: #999;
+}
+
+.content .item .detail .edit{
+    color: #777;
+    text-decoration: none;
+}
+
+.content .item .detail .edit:hover{
+    text-decoration: underline;
+}
+
+.aside{
+    width: 290px;
+}
+
+.aside-item{
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.aside-item .title{
+    background: #666;
+    color: #fff;
+    padding: 10px 14px;
+    text-shadow: 3px 3px 3px #000;
+}
+
+.aside-item .item-content{
+    padding: 12px 14px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.aside-item .item-content p{
+    line-height: 26px;
+}
+
+.aside-item .item-content p a{
+    color: #666;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.aside-item .item-content .add-follow{
+    font-size: 12px;
+}
+
+.aside-item .item-content p a:hover{
+    text-decoration: underline;
+    color: #FF5E52;
+}
+
+.aside-item .item-tab-content{
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.aside-item .item-tab-content p{
+    height: 56px;
+    line-height: 56px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.aside-item .item-tab-content p a{
+    padding: 0 14px;
+    display: block;
+    color: #666;
+    text-decoration: none;
+    transition: all .2s;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+}
+
+.aside-item .item-tab-content p a:hover{
+    color: #fff;
+    background: #FF5E52;
+}
+
+.comment-content{
+    border: 1px dashed #dedede;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.comment-box{
+    padding: 20px;
+}
+
+.comment-box .comment-name{
+    color: #7d8b8d;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.comment-one{
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.comment-one a{
+    color: #333;
+    text-decoration: none;
+}
+
+.comment-one a:hover{
+    text-decoration: underline;
+}
+
+.comment-one .comment-time{
+    color: #888;
+}
+
+.comment-one .comment-content{
+    color: #666;
+}
+
+.comment-input-box .cover{
+    width: 100%;
+    text-align: center;
+}
+
+.comment-input-box .cover p{
+    font-size: 14px;
+    color: #7d8b8d;
+    padding: 38px 0;
+}
+
+.cover-icon{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../static/images/icon/icon_addcomment.gif") no-repeat;
+    margin-right: 3px;
+}
+
+.comment-input-box{
+    padding: 15px;
+}
+
+.comment-input-box .cover p a{
+    text-decoration: none;
+    color: #444;
+}
+
+.comment-input-box .comment textarea{
+    border: 1px solid #ddd;
+    width: 100%;
+    outline: none;
+    resize: none;
+    overflow-y: hidden;
+    color: #444;
+    margin: 0;
+}
+
+.comment-input-box .comment .report{
+    border: 0;
+    background: #5cb85c;
+    color: #fff;
+    padding: 3px 8px;
+    font-size: 12px;
+    margin-top: 6px;
+    border-radius: 2px;
+    cursor: pointer;
+}

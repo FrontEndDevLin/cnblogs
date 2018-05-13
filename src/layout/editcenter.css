@@ -1,0 +1,278 @@
+.edit-center{
+    background-color: #fff;
+}
+
+.edit-center .header{
+    min-width: 1200px;
+    background: #F0EEF5;
+}
+
+.edit-center .header-content{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 8px 0;
+    font-size: 12px;
+}
+
+.edit-center .head-lf li{
+    float: left;
+}
+
+.edit-center .head-lf a{
+    color: #444;
+    text-decoration: none;
+}
+
+.edit-center .head-rt a{
+    color: #002C99;
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+.edit-center .logoLine{
+    border: 5px solid #666;
+    background: #fff;
+}
+
+.edit-center .logoLine-sub{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.edit-center .logoLine-sub a{
+    display: block;
+    margin-left: 20px;
+}
+
+.edit-center .container{
+    width: 1200px;
+    margin: 10px auto;
+}
+
+.edit-center .left-list{
+    width: 190px;
+    min-height: 400px;
+    _height: 400px;
+    border: 5px solid #666;
+    background: #F0EEF5;
+}
+
+.edit-center .oper-content{
+    padding: 10px;
+}
+
+.edit-center .oper-content .oper-title{
+    font-size: 16px;
+    color: #444;
+}
+
+.edit-center .oper-content ul{
+    margin-top: 10px;
+}
+
+.edit-center .oper-content a{
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.edit-center .oper-content a:hover{
+    text-decoration: underline;
+}
+
+.edit-center .oper-content a.active{
+    color: #FF5E52;
+}
+
+.edit-center .right-content{
+    border: 2px solid #666;
+    width: 960px;
+}
+
+.edit-center .essay,.setting,.editTypePage,.typePage{
+    padding: 18px;
+}
+
+.editTypePage{
+    position: relative;
+}
+
+.prompt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 230px;
+    height: 50px;
+    background: #eee;
+    text-align: center;
+}
+
+.prompt p{
+    text-align: center;
+}
+
+.edit-center .right-content{
+    position: relative;
+}
+
+.edit-center .right-content .right-title{
+    text-align: center;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.edit-center .ed-item{
+    margin-bottom: 12px;
+}
+
+.edit-center .ed-title{
+    font-size: 14px;
+}
+
+.edit-center .ed-input-box input{
+    width: 100%;
+}
+
+.edit-center .ed-type-box li{
+    font-size: 12px;
+    float: left;
+    margin-right: 10px;
+}
+
+.edit-center input.ed-checkbox{
+    margin: 0;
+    vertical-align: middle;
+}
+
+.edit-center .ed-high-rank{
+    font-size: 12px;
+}
+
+.edit-center .ed-high-rank span{
+    margin-right: 10px;
+}
+
+.edit-center .ed-editor-input textarea{
+    width: 100%;
+}
+
+.edit-center .ed-editor-input .text-area{
+    height: 180px;
+    border: 1px solid #888;
+    overflow-y: scroll;
+}
+
+.edit-center .ed-typelist li{
+    float: left;
+    margin-right: 30px;
+    font-size: 12px;
+}
+
+.edit-center .type-table{
+    width: 100%;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.edit-center .type-table th{
+    width: 66px;
+    text-align: center;
+}
+
+.edit-center .type-table th.table-title{
+    width: auto;
+    text-align: left;
+    text-indent: 4px;
+}
+
+.edit-center .type-table th.table-title a{
+    color: #666;
+    text-decoration: none;
+}
+
+.edit-center .type-table th.table-title a:hover{
+    text-decoration: underline;
+}
+
+.edit-center .type-table th{
+    border-bottom: 1px solid #bbb;
+}
+
+.edit-center .type-table tbody th{
+    color: #666;
+}
+
+.edit-center .type-table thead th{
+    border-bottom: 1px solid #6B86B3;
+}
+
+.edit-center .type-table .btn-edit{
+    color: #888;
+}
+
+.edit-center .type-table .btn-del{
+    color: #FF5E52;
+}
+
+.codeEditer,.bodyEditer{
+    width: 500px;
+    height: 250px;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #eee;
+}
+
+.parHead{
+    width: 500px;
+    height: 50px;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #eee;
+}
+
+.codeEditer .codeEditerInput,.bodyEditer .bodyEditerInput{
+    height: 220px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+.parHeadInput{
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+.codeEditer p,.parHead p,.bodyEditer p{
+    text-align: center;
+}
+
+.text-area .step{
+    margin: 0;
+}
+
+.text-area .code{
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.text-area .code pre{
+    margin: 0;
+}

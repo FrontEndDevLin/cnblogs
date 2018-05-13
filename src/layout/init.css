@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: "Microsoft YaHei";
+    box-sizing: border-box;
+    background: #F0EEF5;
+}
+
+p,ul,ol,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+ol,ul{
+    list-style-type: none;
+}
+
+img{
+    vertical-align: middle;
+    border: 0;
+}
+
+.lf{
+    float:left;
+}
+
+.rt{
+    float:right;
+}
+
+.hide{
+    display: none;
+}
+
+.clear{
+    *zoom: 1;   /* IE6/7清除浮动hack */
+}
+
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clear:before{
+    content: "";
+    display: table;
+}
+
+.main{
+    margin: 8px;
+}

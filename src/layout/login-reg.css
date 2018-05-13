@@ -1,0 +1,118 @@
+.login-reg{
+    margin: 8px;
+}
+
+.login-reg .header{
+    min-width: 1200px;
+    padding-bottom: 0;
+}
+
+.header-content{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content h2 a{
+    text-decoration: none;
+    color: #666;
+}
+
+.header .state{
+    margin: 5px 0 10px 0;
+}
+
+.header .state p{
+    text-align: right;
+}
+
+.header .state p a{
+    font-size: 14px;
+    text-decoration: underline;
+    color: #666;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container .form{
+    width: 380px;
+    margin: 40px auto 150px;
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.container .form .form-cover{
+    padding: 20px 30px;
+}
+
+.container .form .title{
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.container .form .label{
+    border: 1px solid #bbb;
+    margin-top: 5px;
+    padding: 6px 0;
+    border-radius: 4px;
+}
+
+.container .form .label span{
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.container .form .label input{
+    border: 0;
+    outline: 0;
+}
+
+.container .form .button{
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.container .form .button a{
+    display: inline;
+    padding: 6px 40px;
+    background: #45B549;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background .2s;
+    -o-transition: background .2s;
+    -moz-transition: background .2s;
+    -webkit-transition: background .2s;
+}
+
+.container .form .button a:hover{
+    background: #45C549;
+}
+
+.container .form .tip{
+    font-size: 12px;
+    height: 20px;
+    padding-left: 5px;
+}
+
+.container .form .fail{
+    color: #FF5E52;
+}
+
+.container .form .success{
+    color: #45B549;
+}
+
+.lr-footer{
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
