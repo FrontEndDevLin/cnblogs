@@ -7,5 +7,13 @@
     text-align: center;
     line-height: 60px;
     font-size: 14px;
-    color: #444;
+}
+
+.footer p span {
+    margin-right: 16px;
+}
+
+.footer p span a {
+    color: #ccc;
+    text-decoration: none;
 }

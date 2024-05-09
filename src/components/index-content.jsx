@@ -1,29 +1,25 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import request from '../utils/request';
 
-class IndexContentComponent extends Component {
-    constructor(){
-        super();
-        this.state = {
-            serverUrl: "http://127.0.0.1:8080",
-            abstract: []
-        }
-    }
-    componentWillMount(){
-        fetch(this.state.serverUrl+"/blog/abstract")
-        .then(function(res){
-            return res.json();
-        }).then(function(data){
-            var obj = data.data;
-            for(var i=0;i<obj.length;i++){
+function IndexContentComponent() {
+    let [ abstract, setAbstract ] = useState([]);
+
+    useEffect(() => {
+        request.get({
+            url: "blog/abstract"
+        }).then(res => {
+            var obj = res.data;
+            for(var i=0; i < obj.length; i++){
                 var newDate = new Date(obj[i].createTime).toLocaleDateString();
                 var arr = newDate.split("/");
                 obj[i].createTime = arr[0]+"年"+arr[1]+"月"+arr[2]+"日";
             }
-            this.setState({abstract:obj});
-        }.bind(this))
-    }
-    loadAbstract=(data)=>{
+            setAbstract(obj);
+        })
+    }, []);
+
+    function loadAbstract(data) {
         var jsxHtml = [];
         for(var i=0;i<data.length;i++){
             jsxHtml.push(<div className="item" key={i}>
@@ -42,17 +38,18 @@ class IndexContentComponent extends Component {
                     <span>{"评论("+ data[i].comCount +")"}</span>
                     <span>{new Date(data[i].lastEditTime).toLocaleString()}</span>
                     <span>{data[i].author}</span>
-                    <a className="edit" href="javascript:;">编辑</a>
+                    <a className="edit">编辑</a>
                 </p>
             </div>)
         }
         return jsxHtml;
     }
-    render(){
-        return <div className="content lf">
+
+    return (
+        <div className="content lf">
             {/*<!-- 盒子 -->*/}
             <div>
-                {this.loadAbstract(this.state.abstract)}
+                {loadAbstract(abstract)}
                 {/*<div className="item">
                     <p className="title">
                         <span className="time">置顶随笔</span>
@@ -76,7 +73,7 @@ class IndexContentComponent extends Component {
                 </div>*/}
             </div>
         </div>
-    }
+    )
 }
 
 export default IndexContentComponent;

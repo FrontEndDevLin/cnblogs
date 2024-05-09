@@ -79,7 +79,7 @@
     padding-bottom: 20px;
 }
 
-.container .form .button a{
+.container .form .button span{
     display: inline;
     padding: 6px 40px;
     background: #45B549;
@@ -91,9 +91,10 @@
     -o-transition: background .2s;
     -moz-transition: background .2s;
     -webkit-transition: background .2s;
+    cursor: pointer;
 }
 
-.container .form .button a:hover{
+.container .form .button span:hover{
     background: #45C549;
 }
 

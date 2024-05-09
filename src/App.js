@@ -1,29 +1,25 @@
-import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-import IndexComponent from './component/index';
-import DetailComponent from './component/detail';
-import EditCenterComponent from './component/edit-center';
-import LoginComponent from './component/login';
-import RegComponent from './component/register';
-import './layout/init.css';
-import './layout/index.css';
+import logo from './logo.svg';
+import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-    //   <div className="App">
-    //     <header className="App-header">
-    //       <img src={logo} className="App-logo" alt="logo" />
-    //       <h1 className="App-title">Welcome to React</h1>
-    //     </header>
-    //     <p className="App-intro">
-    //       To get started, edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //   </div>
-        <IndexComponent />
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
